@@ -6,7 +6,6 @@ import (
 
 	openrouter "github.com/OpenRouterTeam/go-sdk"
 	"github.com/OpenRouterTeam/go-sdk/models/components"
-	"github.com/OpenRouterTeam/go-sdk/models/operations"
 	"github.com/OpenRouterTeam/go-sdk/optionalnullable"
 	"github.com/OpenRouterTeam/go-sdk/types/stream"
 	core "github.com/plexusone/omnillm-core"
@@ -114,7 +113,7 @@ func (p *Provider) Close() error {
 func (p *Provider) CreateChatCompletion(ctx context.Context, req *core.ChatCompletionRequest) (*core.ChatCompletionResponse, error) {
 	chatReq := p.buildRequest(req)
 
-	resp, err := p.client.Chat.Send(ctx, chatReq)
+	resp, err := p.client.Chat.Send(ctx, chatReq, nil)
 	if err != nil {
 		return nil, p.wrapError(err)
 	}
@@ -131,7 +130,7 @@ func (p *Provider) CreateChatCompletionStream(ctx context.Context, req *core.Cha
 	chatReq := p.buildRequest(req)
 	chatReq.Stream = openrouter.Pointer(true)
 
-	resp, err := p.client.Chat.Send(ctx, chatReq)
+	resp, err := p.client.Chat.Send(ctx, chatReq, nil)
 	if err != nil {
 		return nil, p.wrapError(err)
 	}
@@ -396,7 +395,7 @@ func ptrValueOrDefault[T any](ptr *T, def T) T {
 
 // streamAdapter wraps an OpenRouter EventStream to implement core.ChatCompletionStream.
 type streamAdapter struct {
-	stream *stream.EventStream[operations.SendChatCompletionRequestResponseBody]
+	stream *stream.EventStream[components.ChatStreamingResponse]
 	done   bool
 }
 
