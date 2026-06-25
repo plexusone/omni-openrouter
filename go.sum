@@ -1,5 +1,5 @@
-github.com/OpenRouterTeam/go-sdk v0.5.0 h1:VIK2P2CSyIPJmMD1twe+GfkMQWAZw54xB/YizRoJPqU=
-github.com/OpenRouterTeam/go-sdk v0.5.0/go.mod h1:8ZRHxPEBG2Lu7BXRGbcoTdhRQnXGFZ+y0jKVpCAQR8c=
+github.com/OpenRouterTeam/go-sdk v0.5.1 h1:UOo2lQ4bhe/N/SeF2J02tB5Qr7dypAWTMjjhMgMhtx8=
+github.com/OpenRouterTeam/go-sdk v0.5.1/go.mod h1:GRqEs3Twjnq1GekyuZCxHi55X8rBiHYK860wc3IvyUE=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/grokify/mogo v0.74.6 h1:isdwQOfayT1E9w4il4btc2on6KY72VZnjRaRAka2iXY=
