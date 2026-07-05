@@ -3,8 +3,8 @@
 [![Go CI][go-ci-svg]][go-ci-url]
 [![Go Lint][go-lint-svg]][go-lint-url]
 [![Go SAST][go-sast-svg]][go-sast-url]
-[![Go Report Card][goreport-svg]][goreport-url]
 [![Docs][docs-godoc-svg]][docs-godoc-url]
+[![Docs][docs-mkdoc-svg]][docs-mkdoc-url]
 [![Visualization][viz-svg]][viz-url]
 [![License][license-svg]][license-url]
 
@@ -14,11 +14,11 @@
  [go-lint-url]: https://github.com/plexusone/omni-openrouter/actions/workflows/go-lint.yaml
  [go-sast-svg]: https://github.com/plexusone/omni-openrouter/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
  [go-sast-url]: https://github.com/plexusone/omni-openrouter/actions/workflows/go-sast-codeql.yaml
- [goreport-svg]: https://goreportcard.com/badge/github.com/plexusone/omni-openrouter
- [goreport-url]: https://goreportcard.com/report/github.com/plexusone/omni-openrouter
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/omni-openrouter
  [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/omni-openrouter
- [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
+ [docs-mkdoc-svg]: https://img.shields.io/badge/Go-dev%20guide-blue.svg
+ [docs-mkdoc-url]: https://plexusone.dev/omni-openrouter
+ [viz-svg]: https://img.shields.io/badge/Go-visualizaton-blue.svg
  [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fomni-openrouter
  [loc-svg]: https://tokei.rs/b1/github/plexusone/omni-openrouter
  [repo-url]: https://github.com/plexusone/omni-openrouter
@@ -130,7 +130,41 @@ Model identifiers follow the format `provider/model-name`, for example:
 - Streaming completions
 - Vision support (for compatible models)
 - JSON mode (for compatible models)
+- Reasoning effort control
 - Automatic error classification for intelligent fallback
+
+## Reasoning
+
+OpenRouter supports the `reasoning_effort` parameter with extended values:
+
+```go
+import omnillm "github.com/plexusone/omnillm-core"
+
+effort := omnillm.ReasoningEffortHigh
+response, err := client.CreateChatCompletion(ctx, &omnillm.ChatCompletionRequest{
+    Model:           "anthropic/claude-3.5-sonnet",
+    ReasoningEffort: &effort,
+    Messages:        messages,
+})
+```
+
+### Supported Values
+
+OpenRouter supports extended `reasoning_effort` values beyond the standard four:
+
+| Value | Description |
+|-------|-------------|
+| `"none"` | Disable reasoning |
+| `"minimal"` | Minimal reasoning |
+| `"low"` | Light reasoning |
+| `"medium"` | Moderate reasoning |
+| `"high"` | Deep reasoning |
+| `"xhigh"` | Extra-high reasoning |
+| `"max"` | Maximum reasoning |
+
+The standard omnillm constants (`ReasoningEffortNone`, `ReasoningEffortLow`, `ReasoningEffortMedium`, `ReasoningEffortHigh`) work directly. For extended values like `"xhigh"` or `"max"`, set the string value directly.
+
+See [Reasoning Feature Guide](https://github.com/plexusone/omnillm-core/blob/main/docs/features/reasoning.md) for cross-provider usage.
 
 ## Configuration
 
