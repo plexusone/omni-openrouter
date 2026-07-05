@@ -1,0 +1,47 @@
+{
+  "$schema": "https://github.com/grokify/structured-changelog/raw/v0.7/schema/changelog.schema.json",
+  "irVersion": "1.0",
+  "project": "omni-openrouter",
+  "repository": "https://github.com/plexusone/omni-openrouter",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "releases": [
+    {
+      "version": "v0.2.0",
+      "date": "2026-07-05",
+      "highlights": [
+        { "description": "**Reasoning Effort Support**: Pass `reasoning_effort` to OpenRouter API with extended values" }
+      ],
+      "added": [
+        { "description": "[omnillm] `ReasoningEffort` field support with OpenRouter extended values", "commit": "f16572e" }
+      ],
+      "documentation": [
+        { "description": "Reasoning section in README with usage examples and supported values", "commit": "21ead83" }
+      ],
+      "dependencies": [
+        { "description": "`github.com/plexusone/omnillm-core` v0.17.0 → v0.18.0", "commit": "944cccc" }
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "2026-06-15",
+      "highlights": [
+        { "description": "Initial release of OpenRouter thick provider for OmniLLM" },
+        { "description": "Access to 300+ AI models through unified omnillm interface" }
+      ],
+      "added": [
+        { "description": "[omnillm] OpenRouter provider implementing `core.Provider` interface" },
+        { "description": "[omnillm] Streaming support via `CreateChatCompletionStream`" },
+        { "description": "[omnillm] Tool/function calling support" },
+        { "description": "[omnillm] JSON mode support" },
+        { "description": "[auth] OAuth PKCE authentication flow for interactive login" },
+        { "description": "[auth] API key storage in system keyring via omnivault" }
+      ],
+      "dependencies": [
+        { "description": "`github.com/OpenRouterTeam/go-sdk` v0.5.0" },
+        { "description": "`github.com/plexusone/omnillm-core` v0.17.0" },
+        { "description": "`github.com/plexusone/omnivault` v0.5.0" }
+      ]
+    }
+  ]
+}
