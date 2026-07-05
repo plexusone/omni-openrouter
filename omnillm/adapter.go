@@ -175,6 +175,12 @@ func (p *Provider) buildRequest(req *core.ChatCompletionRequest) components.Chat
 		chatReq.ToolChoice = p.convertToolChoice(req.ToolChoice)
 	}
 
+	// ReasoningEffort mapping
+	if req.ReasoningEffort != nil {
+		effort := components.ChatRequestReasoningEffort(*req.ReasoningEffort)
+		chatReq.ReasoningEffort = optionalnullable.From(&effort)
+	}
+
 	return chatReq
 }
 
