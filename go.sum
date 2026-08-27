@@ -1,5 +1,5 @@
-github.com/OpenRouterTeam/go-sdk v0.7.56 h1:6v8G6IBkIHYRIt9WFU538X5TkXBGpnJHT+O+pU00hZM=
-github.com/OpenRouterTeam/go-sdk v0.7.56/go.mod h1:44jy7MHHivy0oGXa16UrxFIi1y3+LEgkgWGZ9437bEA=
+github.com/OpenRouterTeam/go-sdk v0.7.73 h1:trw4DWahp9r7bWNiMMarubsMEPVRADh1z9YE3+Ckjww=
+github.com/OpenRouterTeam/go-sdk v0.7.73/go.mod h1:8vFtUZ9I2YiDntYbck42wQhrx9DsJN5PHbViaHwTkXc=
 github.com/grokify/mogo v0.74.6 h1:isdwQOfayT1E9w4il4btc2on6KY72VZnjRaRAka2iXY=
 github.com/grokify/mogo v0.74.6/go.mod h1:MUheNHoi0hatrQbS60W61CMOkcu/yYRbOQBkNnJCUQY=
 github.com/grokify/oscompat v0.4.0 h1:1orYWC7QG8vAdlDqCFULZf9eIovwc35UFzVoxGNFRSY=
@@ -12,7 +12,7 @@ github.com/plexusone/omnivault v0.5.0 h1:7oZwP1KNS+XQ1ksoZoKnLS9PV0TQ93b5NEuxO0T
 github.com/plexusone/omnivault v0.5.0/go.mod h1:LQNyI6gTygb3ht4yLhLpHIdcOVALOTGnaO1oJn6+2KE=
 github.com/spyzhov/ajson v0.9.6 h1:iJRDaLa+GjhCDAt1yFtU/LKMtLtsNVKkxqlpvrHHlpQ=
 github.com/spyzhov/ajson v0.9.6/go.mod h1:a6oSw0MMb7Z5aD2tPoPO+jq11ETKgXUr2XktHdT8Wt8=
-github.com/stretchr/testify v1.12.0 h1:K6Mr6jO9JICuend/5xzTM03ydSV3vdNRYAdPSukj8uI=
-github.com/stretchr/testify v1.12.0/go.mod h1:bOYBZb5qJ00vPzWfIqBUZPaxK8jWiXc6d3ErP4Ca9Gw=
-gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
-gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
+github.com/stretchr/testify v1.12.1 h1:EuwCh5fleGS7H32xRwO3wRGT7DxrDhLAT6FF8MpWDWE=
+github.com/stretchr/testify v1.12.1/go.mod h1:MDEgiDPPsNp5cuIrHPPCyornHKgEVbtFUmoNlxoYthg=
+go.yaml.in/yaml/v3 v3.0.5 h1:N6y/pJk8buWs9NY5ERU2HSMfm+IuD/OtfdAnq6kESPw=
+go.yaml.in/yaml/v3 v3.0.5/go.mod h1:HVTZu1O7/Vkt2N+BFy8Zza+lnLsABggaTM2ZpNIGuKg=
