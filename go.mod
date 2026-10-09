@@ -3,7 +3,7 @@ module github.com/plexusone/omni-openrouter
 go 1.26.0
 
 require (
-	github.com/OpenRouterTeam/go-sdk v0.9.22
+	github.com/OpenRouterTeam/go-sdk v0.9.24
 	github.com/plexusone/omnillm-core v0.18.1
 	github.com/plexusone/omnivault v0.5.0
 )
