@@ -1,9 +1,9 @@
-github.com/OpenRouterTeam/go-sdk v0.9.61 h1:iMb7Ml41OSnuHkMNYqEXQFUPiSdk9bKDcNCStE2XOFg=
-github.com/OpenRouterTeam/go-sdk v0.9.61/go.mod h1:8vFtUZ9I2YiDntYbck42wQhrx9DsJN5PHbViaHwTkXc=
+github.com/OpenRouterTeam/go-sdk v0.9.64 h1:x+Eq1xU2caatSExCscLGtF4bm5pH3OBe+5hplJcGxD0=
+github.com/OpenRouterTeam/go-sdk v0.9.64/go.mod h1:8vFtUZ9I2YiDntYbck42wQhrx9DsJN5PHbViaHwTkXc=
 github.com/grokify/mogo v0.75.0 h1:YVOGu49NWvltMfG9wh3aarRD6CTF7y0llEFU+HU9drc=
 github.com/grokify/mogo v0.75.0/go.mod h1:FLksmFRywriEucyYLAGyub7C0po49Yc/nHc9q9gX67w=
-github.com/grokify/oscompat v0.4.0 h1:1orYWC7QG8vAdlDqCFULZf9eIovwc35UFzVoxGNFRSY=
-github.com/grokify/oscompat v0.4.0/go.mod h1:Ekex/WzHaA39LNt5xbeQRASo74NEXAIqBlqdvNF2oUM=
+github.com/grokify/oscompat v0.7.0 h1:aD36tcBnPQRvxQGtuclr0qG87zv6yh5e2FSPETBO+2E=
+github.com/grokify/oscompat v0.7.0/go.mod h1:Ekex/WzHaA39LNt5xbeQRASo74NEXAIqBlqdvNF2oUM=
 github.com/grokify/sogo v0.15.0 h1:RS4DPxNhZQLmz/qcLa5t1Mr+SjGwSZPJgpefp9BJInE=
 github.com/grokify/sogo v0.15.0/go.mod h1:BZjNVHThtkfC80J2kcPWCytQzu5XKtHTxCRffpZaWb8=
 github.com/plexusone/omnillm-core v0.18.1 h1:Pp/F7L9edGlPtd/OvTq39/H2XttIXRN9K5cf+KcARW0=

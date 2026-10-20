@@ -163,7 +163,7 @@ func (p *Provider) buildRequest(req *core.ChatCompletionRequest) components.Chat
 	}
 
 	if len(req.Stop) > 0 {
-		stop := components.CreateStopArrayOfStr(req.Stop)
+		stop := components.CreateChatRequestStopArrayOfStr(req.Stop)
 		chatReq.Stop = optionalnullable.From(&stop)
 	}
 
