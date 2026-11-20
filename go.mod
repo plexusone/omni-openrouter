@@ -5,12 +5,12 @@ go 1.26.10
 require (
 	github.com/OpenRouterTeam/go-sdk v0.9.104
 	github.com/plexusone/omnillm-core v0.18.1
-	github.com/plexusone/omnivault v0.6.0
+	github.com/plexusone/omnivault v0.6.1
 )
 
 require (
 	github.com/grokify/mogo v0.75.0 // indirect
-	github.com/grokify/oscompat v0.9.0 // indirect
+	github.com/grokify/oscompat v0.13.0 // indirect
 	github.com/grokify/sogo v0.15.0 // indirect
 	github.com/spyzhov/ajson v0.9.6 // indirect
 )
